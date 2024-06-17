@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+
+
+.header{
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header--logo{
+  width: 80px;
+  margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header--title{
+  color: #ffff;
+  letter-spacing: 2px;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header--side{
+  color: #ffff;
+  opacity: 0.5;
+}
+
+.form{
+  display: grid;
+  grid-template-rows: 40px 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+  font-family: "Karla", sans-serif;
+}
+
+.form--input{
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button{
+  grid-column: 1/ -1;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+
+main{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  row-gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.memeImage{
+  max-width: 80%;
+  max-height: 1;
+  align-self: center;
 }
