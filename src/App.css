@@ -30,6 +30,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 17px;
   font-family: "Karla", sans-serif;
+  width: 900px;
+  align-self: center;
 }
 
 .form--input{
@@ -54,8 +56,47 @@ main{
   row-gap: 10px;
 }
 
-.memeImage{
-  max-width: 80%;
-  max-height: 1;
+.meme--Image{
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme{
   align-self: center;
+  position: relative;
+  display: flex;
+  max-width: 800px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
